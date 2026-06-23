@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy – AndroMetrics</title>
-  <meta name="description" content="Informativa privacy di AndroMetrics: dati, iCloud, HealthKit, AI e diritti utente." />
+  <meta name="description" content="Informativa privacy di AndroMetrics: dati, iCloud, HealthKit, AI, farmaci, DNA on-device e diritti utente." />
   <link rel="icon" href="assets/app-logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -27,7 +27,7 @@
   <div class="page">
     <main class="card">
       <h1>Privacy Policy</h1>
-      <p class="meta">Ultimo aggiornamento · 23 giugno 2026</p>
+      <p class="meta">Ultimo aggiornamento · 23 giugno 2026 · v1.2.0</p>
 
       <h2>1. Titolare del trattamento</h2>
       <p>Titolare: Fernando Piras<br>Email: <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a></p>
@@ -39,6 +39,9 @@
         <li>Testi estratti da immagini/referti caricati volontariamente (OCR on-device).</li>
         <li>Preferenze app (lingua, notifiche, impostazioni premium, integrazioni).</li>
         <li>Identificativo tecnico pseudonimo del dispositivo per limitare abusi sul servizio AI (non collegato alla tua identità).</li>
+        <li>Farmaci prescritti registrati dall'utente (auto-dichiarazione, non verificata dall'app).</li>
+        <li>Dati genetici opzionali importati da file raw DNA (elaborazione solo sul dispositivo).</li>
+        <li>Snapshot modalità coppia TTC esportati/importati manualmente dall'utente.</li>
       </ul>
 
       <h2>3. Finalità</h2>
@@ -52,7 +55,7 @@
       <h2>4. Base giuridica per finalità</h2>
       <ul>
         <li>Esecuzione del servizio richiesto (art. 6.1.b GDPR): salvataggio locale, funzionalità app, backup/ripristino.</li>
-        <li>Consenso esplicito (art. 6.1.a e art. 9.2.a GDPR): dati relativi alla salute, insight avanzati, funzionalità AI.</li>
+        <li>Consenso esplicito (art. 6.1.a e art. 9.2.a GDPR): dati relativi alla salute, insight avanzati, funzionalità AI, import DNA.</li>
         <li>Obblighi legali (art. 6.1.c GDPR): adempimenti fiscali/amministrativi quando applicabili agli acquisti.</li>
         <li>Legittimo interesse (art. 6.1.f GDPR): sicurezza, prevenzione abusi e miglioramenti tecnici non invasivi.</li>
       </ul>
@@ -60,8 +63,9 @@
       <h2>5. Dove sono conservati i dati</h2>
       <ul>
         <li>I dati principali sono salvati localmente sul dispositivo.</li>
-        <li>Se iCloud è disponibile e attivo sull'account Apple, alcuni dati/prefenze possono essere sincronizzati tramite NSUbiquitousKeyValueStore.</li>
+        <li>Se iCloud è disponibile e attivo sull'account Apple, alcuni dati/prefenze possono essere sincronizzati tramite NSUbiquitousKeyValueStore (esclusi i dati genetici).</li>
         <li>Il backup esportato viene creato come file JSON nella posizione scelta dall'utente.</li>
+        <li>I dati genetici importati restano esclusivamente sul dispositivo e non sono sincronizzati su iCloud.</li>
       </ul>
 
       <h2>6. Fornitori terzi e ruoli</h2>
@@ -94,10 +98,20 @@
         <li>I backup locali restano nei percorsi scelti dall'utente fino a cancellazione manuale.</li>
         <li>I dati eventualmente inviati a fornitori terzi seguono anche i tempi di retention previsti dai rispettivi servizi.</li>
         <li>La funzione "Elimina tutti i dati" nell'app rimuove i dati locali e, se disponibile, anche le copie sincronizzate su iCloud.</li>
+        <li>I dati genetici possono essere eliminati separatamente dalla funzione dedicata in Privacy e sicurezza.</li>
       </ul>
 
       <h2>11. Contatti</h2>
       <p>Per richieste privacy: <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a></p>
+
+      <h2>12. Dati genetici (opzionale)</h2>
+      <p>Se importi un file raw DNA, l'elaborazione avviene interamente sul dispositivo.</p>
+      <ul>
+        <li>Nessun upload automatico a server AndroMetrics o terze parti.</li>
+        <li>Nessuna sincronizzazione iCloud dei dati genetici.</li>
+        <li>Insight mostrati a solo scopo educativo, non diagnostico.</li>
+        <li>Puoi eliminare i dati genetici in qualsiasi momento dalle impostazioni privacy.</li>
+      </ul>
     </main>
 
     <footer class="site-footer">
