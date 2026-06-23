@@ -1,72 +1,99 @@
-<!-- privacy-policy.html -->
 <!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy - AndroMetrics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – AndroMetrics</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="max-width:900px;margin:40px auto;padding:0 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.6;">
-  <h1>Privacy Policy - AndroMetrics</h1>
-  <p><strong>Ultimo aggiornamento:</strong> 12 maggio 2026</p>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html">AndroMetrics</a>
+      <nav class="site" aria-label="Navigazione">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms.html">Termini</a>
+        <a href="support.html">Supporto</a>
+      </nav>
+    </header>
 
-  <h2>1. Titolare</h2>
-  <p>Fernando Piras<br>Email: andrometrics@gmail.com</p>
+    <main class="card">
+      <h1>Privacy Policy – AndroMetrics</h1>
+      <p class="updated"><strong>Ultimo aggiornamento:</strong> 23 giugno 2026</p>
 
-  <h2>2. Dati trattati</h2>
-  <ul>
-    <li>Dati inseriti manualmente (tracking, profilo, stile di vita).</li>
-    <li>Dati salute/fertilità elaborati localmente.</li>
-    <li>Testi da OCR su immagini/referti caricati volontariamente.</li>
-    <li>Preferenze app (lingua, notifiche, premium, integrazioni).</li>
-  </ul>
+      <h2>1. Titolare del trattamento</h2>
+      <p>Titolare: Fernando Piras<br>Email: <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a></p>
 
-  <h2>3. Finalità</h2>
-  <ul>
-    <li>Monitoraggio benessere/fertilità e visualizzazione trend.</li>
-    <li>Insight e notifiche personalizzate.</li>
-    <li>Backup/ripristino e sincronizzazione iCloud (se attiva).</li>
-    <li>Funzionalità AI su richiesta dell’utente.</li>
-  </ul>
+      <h2>2. Dati trattati</h2>
+      <ul>
+        <li>Dati inseriti manualmente nell'app (tracking giornaliero, stile di vita, dati profilo).</li>
+        <li>Dati salute/fertilità elaborati localmente per punteggi e insight.</li>
+        <li>Testi estratti da immagini/referti caricati volontariamente (OCR on-device).</li>
+        <li>Preferenze app (lingua, notifiche, impostazioni premium, integrazioni).</li>
+        <li>Identificativo tecnico pseudonimo del dispositivo per limitare abusi sul servizio AI (non collegato alla tua identità).</li>
+      </ul>
 
-  <h2>4. Base giuridica</h2>
-  <ul>
-    <li>Esecuzione del servizio (art. 6.1.b GDPR).</li>
-    <li>Consenso esplicito per dati salute/AI (art. 6.1.a e 9.2.a GDPR).</li>
-    <li>Obblighi legali ove applicabili (art. 6.1.c GDPR).</li>
-    <li>Legittimo interesse tecnico/sicurezza (art. 6.1.f GDPR).</li>
-  </ul>
+      <h2>3. Finalità</h2>
+      <ul>
+        <li>Fornire monitoraggio benessere/fertilità e grafici.</li>
+        <li>Generare insight e notifiche personalizzate.</li>
+        <li>Abilitare backup/ripristino e, se disponibile, sincronizzazione iCloud.</li>
+        <li>Fornire funzionalità AI su richiesta dell'utente.</li>
+      </ul>
 
-  <h2>5. Conservazione</h2>
-  <ul>
-    <li>Dati principalmente locali sul dispositivo.</li>
-    <li>Backup esportati nei percorsi scelti dall’utente.</li>
-    <li>Eventuali dati verso terze parti seguono anche le loro retention policy.</li>
-  </ul>
+      <h2>4. Base giuridica per finalità</h2>
+      <ul>
+        <li>Esecuzione del servizio richiesto (art. 6.1.b GDPR): salvataggio locale, funzionalità app, backup/ripristino.</li>
+        <li>Consenso esplicito (art. 6.1.a e art. 9.2.a GDPR): dati relativi alla salute, insight avanzati, funzionalità AI.</li>
+        <li>Obblighi legali (art. 6.1.c GDPR): adempimenti fiscali/amministrativi quando applicabili agli acquisti.</li>
+        <li>Legittimo interesse (art. 6.1.f GDPR): sicurezza, prevenzione abusi e miglioramenti tecnici non invasivi.</li>
+      </ul>
 
-  <h2>6. Terze parti</h2>
-  <ul>
-    <li>OpenAI (funzioni AI su richiesta).</li>
-    <li>Apple StoreKit (abbonamenti/pagamenti).</li>
-    <li>Apple HealthKit (lettura opzionale autorizzata).</li>
-    <li>Apple iCloud KVS (sync opzionale).</li>
-  </ul>
+      <h2>5. Dove sono conservati i dati</h2>
+      <ul>
+        <li>I dati principali sono salvati localmente sul dispositivo.</li>
+        <li>Se iCloud è disponibile e attivo sull'account Apple, alcuni dati/prefenze possono essere sincronizzati tramite NSUbiquitousKeyValueStore.</li>
+        <li>Il backup esportato viene creato come file JSON nella posizione scelta dall'utente.</li>
+      </ul>
 
-  <h2>7. Trasferimenti extra UE</h2>
-  <p>Alcuni fornitori possono trattare dati fuori SEE secondo le loro misure contrattuali e di sicurezza.</p>
+      <h2>6. Fornitori terzi e ruoli</h2>
+      <ul>
+        <li><strong>OpenAI</strong> (fornitore AI): i contenuti che invii per le funzioni AI passano da un proxy sicuro gestito da noi verso OpenAI; nell'app non è presente alcuna chiave API.</li>
+        <li><strong>Apple StoreKit</strong> (pagamenti): Apple gestisce transazione, rinnovi, fatturazione e metodi di pagamento.</li>
+        <li><strong>Apple HealthKit</strong>: accesso in sola lettura a dati autorizzati dall'utente (es. passi/sonno).</li>
+        <li><strong>Apple iCloud KVS</strong>: sincronizzazione impostazioni/dati tra dispositivi se l'utente abilita iCloud.</li>
+        <li><strong>Cloudflare</strong> (infrastruttura proxy): instrada le richieste AI verso OpenAI; può processare indirizzo IP e identificativo dispositivo per sicurezza e rate limiting.</li>
+        <li>Per dettagli su conservazione e garanzie dei fornitori, valgono anche le rispettive policy ufficiali.</li>
+      </ul>
 
-  <h2>8. Diritti utente</h2>
-  <ul>
-    <li>Accesso, rettifica, cancellazione, limitazione, opposizione, portabilità (ove applicabile).</li>
-    <li>Revoca del consenso in qualsiasi momento.</li>
-    <li>Richieste a andrometrics@gmail.com (risposta entro 30 giorni salvo proroghe motivate).</li>
-    <li>Reclamo all’autorità competente.</li>
-  </ul>
+      <h2>7. Trasferimenti extra UE</h2>
+      <p>I dati inviati a fornitori terzi possono essere trattati fuori dallo Spazio Economico Europeo secondo le loro misure contrattuali e di sicurezza.</p>
 
-  <h2>9. Minori</h2>
-  <p>L’app non è destinata a minori di 18 anni. Dati eventualmente inviati da minori saranno rimossi senza ritardo ingiustificato.</p>
+      <h2>8. Diritti utente</h2>
+      <ul>
+        <li>Accesso, rettifica, cancellazione, limitazione, opposizione e portabilità, nei limiti applicabili.</li>
+        <li>Revoca del consenso in qualsiasi momento senza pregiudicare la liceità dei trattamenti precedenti.</li>
+        <li>Richieste via email a <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a> con risposta entro 30 giorni, salvo proroghe motivate.</li>
+        <li>Diritto di reclamo all'autorità di controllo competente.</li>
+      </ul>
 
-  <h2>10. Contatti</h2>
-  <p>Email: <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a></p>
+      <h2>9. Minori</h2>
+      <p>L'app non è destinata a minori di 18 anni. Se veniamo a conoscenza di dati forniti da minori, procederemo alla cancellazione senza ingiustificato ritardo.</p>
+
+      <h2>10. Conservazione e cancellazione</h2>
+      <ul>
+        <li>I dati restano sul dispositivo finché l'utente non li elimina, disinstalla l'app o ripristina il dispositivo.</li>
+        <li>I backup locali restano nei percorsi scelti dall'utente fino a cancellazione manuale.</li>
+        <li>I dati eventualmente inviati a fornitori terzi seguono anche i tempi di retention previsti dai rispettivi servizi.</li>
+        <li>La funzione "Elimina tutti i dati" nell'app rimuove i dati locali e, se disponibile, anche le copie sincronizzate su iCloud.</li>
+      </ul>
+
+      <h2>11. Contatti</h2>
+      <p>Per richieste privacy: <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a></p>
+    </main>
+
+    <footer>© 2026 AndroMetrics · <a href="index.html">Torna alla home</a></footer>
+  </div>
 </body>
 </html>
