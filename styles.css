@@ -235,7 +235,11 @@ a:hover { color: var(--accent); }
 
 .hero {
   text-align: center;
-  padding: 12px 0 8px;
+  padding: 12px 20px 8px;
+}
+
+@media (min-width: 640px) {
+  .hero { padding: 40px 52px 8px; }
 }
 
 .hero-logo {
