@@ -27,7 +27,7 @@
   <div class="page">
     <main class="card">
       <h1>Privacy Policy</h1>
-      <p class="meta">Ultimo aggiornamento · 23 giugno 2026 · v1.2.0</p>
+      <p class="meta">Ultimo aggiornamento · 23 giugno 2026 · v1.3.0</p>
 
       <h2>1. Titolare del trattamento</h2>
       <p>Titolare: Fernando Piras<br>Email: <a href="mailto:andrometrics@gmail.com">andrometrics@gmail.com</a></p>
@@ -42,6 +42,7 @@
         <li>Farmaci prescritti registrati dall'utente (auto-dichiarazione, non verificata dall'app).</li>
         <li>Dati genetici opzionali importati da file raw DNA (elaborazione solo sul dispositivo).</li>
         <li>Snapshot modalità coppia TTC esportati/importati manualmente dall'utente.</li>
+        <li>Snapshot riassuntivi TTC su Firebase/Firestore se attivi la sync cloud opzionale.</li>
       </ul>
 
       <h2>3. Finalità</h2>
@@ -50,6 +51,7 @@
         <li>Generare insight e notifiche personalizzate.</li>
         <li>Abilitare backup/ripristino e, se disponibile, sincronizzazione iCloud.</li>
         <li>Fornire funzionalità AI su richiesta dell'utente.</li>
+        <li>Sincronizzare in tempo reale gli snapshot TTC con il partner, solo con consenso esplicito.</li>
       </ul>
 
       <h2>4. Base giuridica per finalità</h2>
@@ -66,6 +68,7 @@
         <li>Se iCloud è disponibile e attivo sull'account Apple, alcuni dati/prefenze possono essere sincronizzati tramite NSUbiquitousKeyValueStore (esclusi i dati genetici).</li>
         <li>Il backup esportato viene creato come file JSON nella posizione scelta dall'utente.</li>
         <li>I dati genetici importati restano esclusivamente sul dispositivo e non sono sincronizzati su iCloud.</li>
+        <li>Con la sync cloud TTC attiva, gli snapshot riassuntivi sono conservati su Google Firebase/Firestore (progetto dedicato AndroMetrics).</li>
       </ul>
 
       <h2>6. Fornitori terzi e ruoli</h2>
@@ -75,6 +78,7 @@
         <li><strong>Apple HealthKit</strong>: accesso in sola lettura a dati autorizzati dall'utente (es. passi/sonno).</li>
         <li><strong>Apple iCloud KVS</strong>: sincronizzazione impostazioni/dati tra dispositivi se l'utente abilita iCloud.</li>
         <li><strong>Cloudflare</strong> (infrastruttura proxy): instrada le richieste AI verso OpenAI; può processare indirizzo IP e identificativo dispositivo per sicurezza e rate limiting.</li>
+        <li><strong>Google Firebase</strong> (Auth anonimo + Firestore): solo per sync cloud TTC opzionale; tratta snapshot riassuntivi e identificativo tecnico anonimo.</li>
         <li>Per dettagli su conservazione e garanzie dei fornitori, valgono anche le rispettive policy ufficiali.</li>
       </ul>
 
@@ -99,6 +103,7 @@
         <li>I dati eventualmente inviati a fornitori terzi seguono anche i tempi di retention previsti dai rispettivi servizi.</li>
         <li>La funzione "Elimina tutti i dati" nell'app rimuove i dati locali e, se disponibile, anche le copie sincronizzate su iCloud.</li>
         <li>I dati genetici possono essere eliminati separatamente dalla funzione dedicata in Privacy e sicurezza.</li>
+        <li>Disconnettendo la sync cloud TTC si interrompe la trasmissione; lo snapshot partner locale resta finché non lo rimuovi.</li>
       </ul>
 
       <h2>11. Contatti</h2>
@@ -111,6 +116,16 @@
         <li>Nessuna sincronizzazione iCloud dei dati genetici.</li>
         <li>Insight mostrati a solo scopo educativo, non diagnostico.</li>
         <li>Puoi eliminare i dati genetici in qualsiasi momento dalle impostazioni privacy.</li>
+      </ul>
+
+      <h2>13. Sync cloud coppia TTC (opzionale)</h2>
+      <p>Se attivi la sincronizzazione cloud nella modalità coppia TTC, con il tuo consenso esplicito.</p>
+      <ul>
+        <li>Vengono trasmessi solo snapshot riassuntivi: nome visualizzato, score, trend 72 giorni, streak, giorno ciclo.</li>
+        <li>Autenticazione tramite Firebase Anonymous Auth (identificativo tecnico pseudonimo).</li>
+        <li>Collegamento partner tramite codice invito a 6 caratteri che condividi volontariamente.</li>
+        <li>Mai caricati su Firebase: tracking completo, referti OCR, dati genetici, messaggi AI.</li>
+        <li>Disattivabile in qualsiasi momento; l'export/import JSON manuale resta disponibile.</li>
       </ul>
     </main>
 
