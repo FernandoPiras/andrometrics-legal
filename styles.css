@@ -93,6 +93,7 @@ a:focus-visible {
     width: 44px;
     height: 44px;
     border-radius: var(--icon-radius);
+    object-fit: contain;
     box-shadow:
         0 1px 2px rgba(0, 0, 0, 0.06),
         0 6px 16px rgba(37, 99, 235, 0.2);
@@ -236,6 +237,9 @@ a:focus-visible {
 .card li strong { color: var(--text); }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 12px 20px 8px;
 }
@@ -245,20 +249,22 @@ a:focus-visible {
 }
 
 .hero-logo {
+    display: block;
     width: 120px;
     height: 120px;
     border-radius: var(--icon-radius);
+    object-fit: contain;
     box-shadow:
         0 2px 4px rgba(0, 0, 0, 0.06),
         0 20px 48px rgba(37, 99, 235, 0.22);
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
 }
 
 .hero .badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 14px;
+    margin-bottom: 14px;
     padding: 6px 14px;
     border-radius: 999px;
     background: var(--accent-soft);
@@ -275,6 +281,14 @@ a:focus-visible {
     margin: 0 auto 32px;
     color: var(--muted);
     font-size: 1.05rem;
+}
+
+.hero .grid {
+    width: 100%;
+}
+
+.hero .contact-strip {
+    width: 100%;
 }
 
 .grid {
